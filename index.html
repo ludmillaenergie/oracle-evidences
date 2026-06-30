@@ -941,6 +941,18 @@ if ('serviceWorker' in navigator) {
       <strong style="color:var(--or);">Android :</strong> menu ⋮ puis<br>"Ajouter à l'écran d'accueil"<br><br>
       <strong style="color:var(--or);">iPhone :</strong> bouton Partager ↑ puis<br>"Sur l'écran d'accueil"
     </p>
-    <button onclick="fermerPopup()" style="background:transparent; border:1px solid var(--or); color:var(--or); font-family:'Cormorant Garamond',serif; font-size:18px; font-style:italic; padding:12px 36px;
+<button onclick="fermerPopup()" style="background:transparent; border:1px solid var(--or); color:var(--or); font-family:'Cormorant Garamond',serif; font-size:18px; font-style:italic; padding:12px 36px; cursor:pointer;">✦ Compris</button>
+  </div>
+</div>
+
+<script>
+function fermerPopup() {
+  document.getElementById('popupInstall').style.display = 'none';
+  localStorage.setItem('popupVuEvidences', 'oui');
+}
+if (localStorage.getItem('popupVuEvidences') === 'oui') {
+  document.getElementById('popupInstall').style.display = 'none';
+}
+</script>
 </body>
 </html>
