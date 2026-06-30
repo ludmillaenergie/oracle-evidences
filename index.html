@@ -933,8 +933,8 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 
-<div id="popupInstall" style="position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.75); z-index:99999; display:flex; align-items:center; justify-content:center; padding:20px;">
-  <div style="background:var(--fond-card); border:1px solid var(--or); padding:30px; max-width:400px; width:100%; text-align:center;">
+<div id="popupInstall" style="position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.75); z-index:99999; display:flex; align-items:center; justify-content:center; padding:20px; overflow-y:auto;">
+<div style="background:var(--fond-card); border:1px solid var(--or); padding:30px; max-width:400px; width:100%; text-align:center; max-height:90vh; overflow-y:auto; margin:auto;">
     <div style="font-size:10px; letter-spacing:4px; text-transform:uppercase; color:var(--texte-doux); margin-bottom:16px;">Ludmilla Énergie</div>
     <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:18px; color:var(--texte); line-height:1.8; margin-bottom:20px;">
       Pour retrouver l'oracle facilement sur votre téléphone —<br><br>
